@@ -16,9 +16,8 @@ class Solution {
                 result.add(i);
                 while(n % i == 0) {
                     n = n / i;
-                }              
+                }
             }
-
         }
         
         int[] answer = new int[result.size()];
