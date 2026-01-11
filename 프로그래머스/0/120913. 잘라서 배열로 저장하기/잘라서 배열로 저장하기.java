@@ -1,0 +1,19 @@
+class Solution {
+    public String[] solution(String my_str, int n) {
+        int len = my_str.length() / n;
+        if(my_str.length() % n > 0) {
+            len = len + 1;
+        }
+        String[] answer = new String[len];
+        
+        for(int i = 0; i < len; i++) {
+            if(len - 1 == i) {
+                answer[i] = my_str.substring((i * n), my_str.length());
+            } else {
+                answer[i] = my_str.substring((i * n), (i * n) + n);
+            }
+            
+        }
+        return answer;
+    }
+}
