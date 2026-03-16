@@ -18,12 +18,13 @@ class Solution {
                 if(rankNumber == rank[i] ) {
                     if(attendance[i]) {
                         winner[count++] = i;
+                    } else {
+                        break;
                     }
                 }
             }
             rankNumber++;
         }
-        System.out.println(Arrays.toString(winner));
         return winner;
     }
 }
