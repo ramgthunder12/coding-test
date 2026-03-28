@@ -3,20 +3,18 @@ class Solution {
         int answer = 0;
         
         for(String drink : order) {
-            answer = answer + isPrice(drink);
+            answer = answer + calculatePrice(drink);
         }
         
         return answer;
     }
     
-    public int isPrice(String menu) {
+    public int calculatePrice(String menu) {
         int price = 0;
         
-        if(menu.contains("am")) {
-            price = 4500;
-        } else if(menu.contains("att")) {
+        if(menu.contains("latte")) {
             price = 5000;
-        } else if(menu.contains("any")) {
+        } else {
             price = 4500;
         }
         
