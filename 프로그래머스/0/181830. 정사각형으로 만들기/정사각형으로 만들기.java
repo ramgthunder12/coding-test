@@ -4,14 +4,14 @@ class Solution {
         int col = arr[0].length;
         
         int size = Math.max(row, col);
-        int[][] result = new int[size][size];
+        int[][] answer = new int[size][size];
         
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
-                result[i][j] = arr[i][j];
+                answer[i][j] = arr[i][j];
             }
         }
         
-        return result;
+        return answer;
     }
 }
